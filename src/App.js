@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 
 import { request } from 'graphql-request';
-import GraphImg from 'graphcms-image'
 
 export const App = () => {
 
@@ -34,16 +33,13 @@ export const App = () => {
     fetchStocks();
   }, []);
 
-  // const stocks = [stock1, stock2, stock3, stock4, stock5, stock6, stock7, stock8, stock9, stock10, stock11, stock12, stock13, stock14, stock15, stock16, stock17, stock18, stock19, stock20, stock21];
 
   const randomStock = stocks && stocks[Math.floor(Math.random() * stocks.length)];
 
-  console.log(randomStock && randomStock.image);
   const stockDescriptoion = randomStock && { __html: randomStock.description }
   return (
     <>
       <div className="stockwrapper">
-        {/* {randomStock && <GraphImg className="stock" fadeIn image={randomStock.image} />} */}
         {randomStock
           && <div className='stock' style={{
             backgroundImage: `url(${randomStock.image.url})`
