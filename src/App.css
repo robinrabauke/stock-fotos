@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+
+.stockwrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.stock {
+  height: 100%;
+  max-width: 100%;
+}
