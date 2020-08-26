@@ -7,9 +7,7 @@ import stock5 from './stocks/Stock5.jpg';
 import stock6 from './stocks/Stock6.jpg';
 import stock7 from './stocks/Stock7.jpg';
 import './App.css';
-import "animate.css/animate.min.css";
 
-import ScrollAnimation from 'react-animate-on-scroll'
 
 function App() {
 
